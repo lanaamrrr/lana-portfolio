@@ -16,9 +16,9 @@ function App() {
 
       {/* Background Glow */}
 
-      <div className="absolute top-0 left-0 w-[450px] h-[450px] bg-violet-700 opacity-20 blur-[150px] rounded-full"/>
+      <div className="absolute top-0 left-0 w-[450px] h-[450px] bg-violet-700 opacity-20 blur-[80px] rounded-full"/>
 
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-fuchsia-600 opacity-20 blur-[150px] rounded-full"/>
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-fuchsia-600 opacity-20 blur-[80px] rounded-full"/>
 
       <Navbar />
 
@@ -38,7 +38,7 @@ function App() {
 
 
     </div>
-  );
+  )
 
   const [loading, setLoading] = useState(true);
 
