@@ -61,10 +61,6 @@ function Hero() {
 
           </div>
 
-          <p className="mt-8 text-gray-400 leading-8 max-w-xl">
-            {personalInfo.about}
-          </p>
-
           <div className="flex gap-5 mt-10">
 
             <Button>
