@@ -101,8 +101,9 @@ function Hero() {
             <div className="absolute inset-0 bg-violet-600 blur-3xl opacity-40 rounded-full"/>
 
             <img
-
               src="/images/profile.png"
+              loading="eager"
+              decoding="async"
 
               alt="Lana"
 

@@ -16,10 +16,8 @@ function App() {
 
       {/* Background Glow */}
 
-      <div className="absolute top-0 left-0 w-[450px] h-[450px] bg-violet-700 opacity-20 blur-[80px] rounded-full"/>
-
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-fuchsia-600 opacity-20 blur-[80px] rounded-full"/>
-
+<div className="pointer-events-none absolute top-0 left-0 -z-10 w-[350px] h-[350px] bg-violet-700 opacity-15 blur-[80px] rounded-full"/>
+<div className="pointer-events-none absolute bottom-0 right-0 -z-10 w-[300px] h-[300px] bg-fuchsia-600 opacity-15 blur-[80px] rounded-full"/>
       <Navbar />
 
       <Hero />
