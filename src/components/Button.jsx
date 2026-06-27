@@ -1,13 +1,13 @@
 function Button({
   children,
   primary = true,
-  onClick,
   href,
+  onClick,
   download,
   target,
   rel,
 }) {
-  const classes = `px-7 py-3 rounded-xl font-semibold transition-all duration-300 ${
+  const className = `inline-flex items-center justify-center px-7 py-3 rounded-xl font-semibold transition-all duration-300 cursor-pointer ${
     primary
       ? "bg-violet-600 hover:bg-violet-700 text-white"
       : "border border-violet-500 hover:bg-violet-600 text-white"
@@ -20,7 +20,7 @@ function Button({
         download={download}
         target={target}
         rel={rel}
-        className={classes}
+        className={className}
       >
         {children}
       </a>
@@ -28,7 +28,11 @@ function Button({
   }
 
   return (
-    <button onClick={onClick} className={classes}>
+    <button
+      type="button"
+      onClick={onClick}
+      className={className}
+    >
       {children}
     </button>
   );

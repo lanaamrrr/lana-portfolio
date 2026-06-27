@@ -65,18 +65,18 @@ function Hero() {
           <div className="flex gap-5 mt-10">
 
             <Button
-              href="/CV/CV.pdf"
-              download
-            >
-              Download CV
-            </Button>
+                href="/CV/CV.pdf"
+                download
+              >
+                Download CV
+              </Button>
 
-           <Button
+              <Button
                 primary={false}
                 onClick={() => setOpenModal(true)}
-                >
+              >
                 Contact Me
-            </Button>
+              </Button>
 
           </div>
 
