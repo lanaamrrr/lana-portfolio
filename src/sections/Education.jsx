@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import SectionTitle from "../components/SectionTitle";
 import { education } from "../constants/data";
+import { FaGraduationCap } from "react-icons/fa";
 
 function Education() {
   return (
-    <section id="education" className="py-28 px-6">
+    <section id="education" className="py-32 px-6">
       <div className="max-w-5xl mx-auto">
 
         <SectionTitle
@@ -12,7 +13,13 @@ function Education() {
           title="Academic Journey"
         />
 
-        <div className="relative border-l-2 border-violet-600 ml-4">
+        <p className="text-center text-gray-400 max-w-2xl mx-auto mb-16">
+          My academic journey in Artificial Intelligence, continuously building
+          a strong foundation in software development and modern web
+          technologies.
+        </p>
+
+        <div className="relative border-l border-violet-500/30 ml-5">
 
           {education.map((item) => (
             <motion.div
@@ -21,33 +28,40 @@ function Education() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="mb-12 ml-8"
+              className="relative mb-12 ml-10"
             >
-              <span className="absolute -left-[11px] w-5 h-5 rounded-full bg-violet-600"></span>
+              {/* Timeline Icon */}
 
-              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8">
+              <div className="absolute -left-[58px] w-10 h-10 rounded-full bg-violet-600 flex items-center justify-center shadow-[0_0_20px_rgba(139,92,246,.4)]">
+                <FaGraduationCap className="text-white text-lg" />
+              </div>
 
-                <p className="text-violet-400 font-semibold">
+              {/* Card */}
+
+              <div className="group rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-violet-500/40 hover:shadow-[0_0_35px_rgba(139,92,246,.2)]">
+
+                <span className="inline-block rounded-full bg-violet-500/10 border border-violet-500/30 px-4 py-1 text-sm text-violet-300 mb-5">
                   {item.year}
-                </p>
+                </span>
 
-                <h3 className="text-2xl font-bold mt-2">
+                <h3 className="text-2xl font-bold text-white mb-2">
                   {item.degree}
                 </h3>
 
-                <p className="text-gray-400 mt-2">
+                <p className="text-violet-400 mb-2">
                   {item.major}
                 </p>
 
-                <p className="mt-2">
+                <p className="text-gray-300 mb-5">
                   {item.university}
                 </p>
 
-                <p className="mt-5 text-gray-400 leading-8">
+                <p className="text-gray-400 leading-8">
                   {item.description}
                 </p>
 
               </div>
+
             </motion.div>
           ))}
 
@@ -59,4 +73,3 @@ function Education() {
 }
 
 export default Education;
-

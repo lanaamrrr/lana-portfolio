@@ -5,20 +5,23 @@ function SkillCard({ title, skills }) {
     <motion.div
       whileHover={{
         y: -8,
-        scale: 1.02,
       }}
       transition={{ duration: 0.3 }}
-      className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8"
+      className="group rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 transition-all duration-300 hover:border-violet-500/40 hover:shadow-[0_0_35px_rgba(139,92,246,.2)]"
     >
-      <h3 className="text-2xl font-bold text-violet-400 mb-6">
+      {/* Title */}
+
+      <h3 className="mb-6 text-2xl font-bold text-white group-hover:text-violet-400 transition-colors">
         {title}
       </h3>
+
+      {/* Skills */}
 
       <div className="flex flex-wrap gap-3">
         {skills.map((skill) => (
           <span
             key={skill}
-            className="px-4 py-2 rounded-full bg-violet-500/20 border border-violet-500/30 text-sm"
+            className="rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-2 text-sm text-violet-200 transition-all duration-300 hover:-translate-y-1 hover:border-violet-500/50 hover:bg-violet-500/20"
           >
             {skill}
           </span>

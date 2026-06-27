@@ -3,50 +3,72 @@ import { personalInfo } from "../constants/data";
 
 function Footer() {
   return (
-    <footer className="border-t border-white/10 mt-20">
-      <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+    <footer className="mt-24 border-t border-white/10 bg-white/5 backdrop-blur-xl">
 
-        <div>
-          <h2 className="text-2xl font-bold text-violet-500">
+      <div className="max-w-7xl mx-auto px-6 py-16">
+
+        <div className="flex flex-col items-center text-center">
+
+          {/* Name */}
+
+          <h2 className="text-4xl font-bold text-white">
             {personalInfo.name}
           </h2>
 
-          <p className="text-gray-400 mt-2">
-            AI Student | Aspiring Full-Stack Developer
+          <p className="mt-3 text-gray-400">
+            AI Student • Aspiring Full-Stack Developer
           </p>
-        </div>
 
-        <div className="flex gap-6 text-2xl">
-          <a
-            href={personalInfo.github}
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-violet-400 transition"
-          >
-            <FaGithub />
-          </a>
+          <p className="mt-6 max-w-xl text-gray-500 leading-7">
+            Thanks for visiting my portfolio.
+            I'm always excited to learn, collaborate,
+            and build meaningful digital experiences.
+          </p>
 
-          <a
-            href={personalInfo.linkedin}
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-violet-400 transition"
-          >
-            <FaLinkedin />
-          </a>
+          {/* Social */}
+
+          <div className="flex gap-5 mt-10">
+
+            <a
+              href={personalInfo.github}
+              target="_blank"
+              rel="noreferrer"
+              className="w-12 h-12 rounded-2xl border border-white/10 bg-white/5 flex items-center justify-center text-xl transition-all duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:bg-violet-500/10 hover:text-violet-400"
+            >
+              <FaGithub />
+            </a>
+
+            <a
+              href={personalInfo.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="w-12 h-12 rounded-2xl border border-white/10 bg-white/5 flex items-center justify-center text-xl transition-all duration-300 hover:-translate-y-1 hover:border-violet-500/40 hover:bg-violet-500/10 hover:text-violet-400"
+            >
+              <FaLinkedin />
+            </a>
+
+          </div>
+
         </div>
 
       </div>
 
-      <div className="text-center border-t border-white/10 py-5 text-gray-500 flex items-center justify-center gap-2">
+      {/* Bottom */}
 
-        Made with
+      <div className="border-t border-white/10 py-6">
 
-        <FaHeart className="text-violet-500" />
+        <p className="flex items-center justify-center gap-2 text-sm text-gray-500">
 
-        by {personalInfo.name}
+          Made with
+
+          <FaHeart className="text-violet-500 animate-pulse" />
+
+          by {personalInfo.name}
+
+        </p>
 
       </div>
+
     </footer>
   );
 }
