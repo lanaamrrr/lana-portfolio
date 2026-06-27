@@ -64,10 +64,8 @@ function Hero() {
 
           <div className="flex gap-5 mt-10">
 
-           <a href="/CV/CV.pdf" download>
-            <Button>
-                Download CV
-            </Button>
+            <a href="/CV/CV.pdf" download>
+                 <Button>Download CV</Button>
             </a>
 
            <Button
