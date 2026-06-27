@@ -62,7 +62,7 @@ function Hero() {
           </div>
 
 
-          <div className="flex gap-5 mt-10">
+          <div className="relative z-50 flex gap-4">
 
             <Button
                 href="/CV/CV.pdf"
