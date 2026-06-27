@@ -61,6 +61,7 @@ function Hero() {
 
           </div>
 
+
           <div className="flex gap-5 mt-10">
 
             <Button>
@@ -117,9 +118,9 @@ function Hero() {
 
       </div>
                 <ContactModal
-                isOpen={openModal}
-                onClose={() => setOpenModal(false)}
-                />
+        isOpen={openModal}
+        onClose={() => setOpenModal(false)}
+        />
     </section>
   );
 }
