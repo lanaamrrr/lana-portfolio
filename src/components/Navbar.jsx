@@ -28,21 +28,22 @@ function Navbar() {
             </a>
           </li>
 
+           <li>
+            <a
+              href="#skills"
+              className="transition-all duration-300 hover:text-violet-400 hover:-translate-y-0.5"
+            >
+              Skills
+            </a>
+          </li>
+
+          
           <li>
             <a
               href="#projects"
               className="transition-all duration-300 hover:text-violet-400 hover:-translate-y-0.5"
             >
               Projects
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#skills"
-              className="transition-all duration-300 hover:text-violet-400 hover:-translate-y-0.5"
-            >
-              Skills
             </a>
           </li>
 
